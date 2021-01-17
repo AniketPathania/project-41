@@ -19,6 +19,7 @@ function preload(){
     walking = loadAnimation("images/walking_8.png","images/walking_7.png",
     "images/walking_6.png","images/walking_5.png","images/walking_4.png","images/walking_3.png",
     "images/walking_2.png","images/walking_1.png");
+    bg = loadImage("images/bg.jpg");
 }
 
 function setup(){
@@ -45,7 +46,7 @@ function setup(){
 
 function draw(){
     Engine.update(engine);
-    background(0); 
+  background(bg); 
 
     //creating thunder
     rand = Math.round(random(1,4));
